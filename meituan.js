@@ -8,11 +8,13 @@
 export meituanCookie='userId=12345678&token=ccccccccccccccccc'
 userId可以删掉不填
 
+cron: 26 0,7-21/2 * * *
+
 变量:
 meituanCookie: 必填，账号cookie，多账号换行或者@或者&隔开，格式: userId=12345678&token=ccccccccccccccccc
 meituanNotify：可选，推送开关，填0为不推送，填1或其他推送。默认为1
 meituanDrawKeyword：可选，抽奖的关键词，留空的话就不抽奖。默认为空
-meituanPosition： 可选，虚拟定位坐标，注意长度，格式: 113233330,23166670 (如113.233330,23.166670需要转换为113233330,23166670，即保留6位小数点)
+meituanPosition： 必须，防黑号，虚拟定位坐标，注意长度，格式: 113233330,23166670 (如113.233330,23.166670需要转换为113233330,23166670，即保留6位小数点)
 
 重写：(打开美团APP)
 [task_local]
